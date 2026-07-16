@@ -1,0 +1,109 @@
+{
+  "model_type": "logistic_regression",
+  "target_col": "churn",
+  "numeric_cols": [
+    "tenure_days",
+    "num_trades_30d",
+    "avg_trade_size",
+    "deposit_30d",
+    "withdrawal_30d",
+    "account_balance",
+    "num_support_tickets",
+    "net_flow_30d",
+    "trade_intensity",
+    "tickets_per_100_days"
+  ],
+  "categorical_cols": [
+    "is_verified",
+    "account_type",
+    "country"
+  ],
+  "categorical_options": {
+    "is_verified": [
+      0,
+      1
+    ],
+    "account_type": [
+      "premium",
+      "standard",
+      "vip"
+    ],
+    "country": [
+      "AE",
+      "ID",
+      "IN",
+      "Other",
+      "PH",
+      "ZA"
+    ]
+  },
+  "numeric_ranges": {
+    "tenure_days": [
+      1.0,
+      1471.0,
+      126.0
+    ],
+    "num_trades_30d": [
+      0.0,
+      19.0,
+      8.0
+    ],
+    "avg_trade_size": [
+      7.72,
+      1618.59,
+      255.09
+    ],
+    "deposit_30d": [
+      0.51,
+      2423.69,
+      346.49
+    ],
+    "withdrawal_30d": [
+      0.17,
+      2291.29,
+      215.51999999999998
+    ],
+    "account_balance": [
+      29.94,
+      8759.16,
+      1348.57
+    ],
+    "num_support_tickets": [
+      0.0,
+      6.0,
+      1.0
+    ],
+    "net_flow_30d": [
+      -2066.3799999999997,
+      2162.95,
+      108.96499999999999
+    ],
+    "trade_intensity": [
+      0.0,
+      6.5,
+      0.06053558844256519
+    ],
+    "tickets_per_100_days": [
+      0.0,
+      150.0,
+      0.2881844380403458
+    ]
+  },
+  "metrics": {
+    "logistic_regression": {
+      "accuracy": 0.7033,
+      "precision": 0.2546,
+      "recall": 0.7639,
+      "f1": 0.3819,
+      "roc_auc": 0.8012
+    },
+    "random_forest": {
+      "accuracy": 0.81,
+      "precision": 0.319,
+      "recall": 0.5139,
+      "f1": 0.3936,
+      "roc_auc": 0.7753
+    }
+  },
+  "selected_model": "logistic_regression"
+}
