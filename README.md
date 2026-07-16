@@ -6,7 +6,7 @@ The retention team wants to identify users likely to churn (stop trading) in the
 scores each user's churn probability and deploys it as a simple interactive demo the
 retention team can use directly.
 
-Live Streamlit APP:https://churn-prediction-app-hgtbb6eldhb8ncyfngwer8.streamlit.app/
+**Live Streamlit APP** : https://churn-prediction-app-hgtbb6eldhb8ncyfngwer8.streamlit.app/
 
 ## Data
 - Source: `data/sample_churn.csv` — 3,000 users, target column `churn`
